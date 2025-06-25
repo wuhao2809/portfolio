@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/haowu/Desktop/code/projects/personal_portfolio/src/app/layout\":[\"static/media/c7f848bed9dd25a3-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
