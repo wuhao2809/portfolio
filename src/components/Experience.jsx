@@ -21,7 +21,7 @@ const Experience = () => {
       <Heading text={'Experience & Education'} />
       <Image
         src={'/education.png'}
-        alt={'Experience Image'}
+        alt={'Education & Experience Image'}
         width={400}
         height={400}
         className="absolute -top-4 right-0 opacity-70 lg:hidden"
@@ -49,10 +49,14 @@ const Experience = () => {
               <h1 className="text-xl sm:text-lg font-light text-gray-700 dark:text-white">
                 {data.title}
               </h1>
-              <p className="text-gray-800 dark:text-gray-100">
+              {/* Eduction part */}
+              {data.education && (
+                <p className="text-gray-800 dark:text-gray-100">
                 <span className="block font-light">Education:</span>
                 <span className="block pl-2 font-extralight">{data.education}</span>
-              </p>
+                </p>
+              )}
+              {/* Experience part */}
               <div className="text-gray-800 dark:text-gray-200 transition-colors">
                 <span className="font-light">Experience:</span>
                 <ul className="pl-2">
@@ -72,13 +76,21 @@ const Experience = () => {
               </span>
             </motion.div>
             <div
-              className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center text-red-400 font-light -translate-y-1/2 z-10 bg-white ${
+              className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square grid place-items-center justify-center text-red-400 font-light -translate-y-1/2 z-10 bg-white ${
                 i % 2 === 0
                   ? 'left-full -translate-x-1/2 lg:left-1/2'
                   : 'right-full translate-x-1/2 lg:right-1/2'
               }`}
             >
-              {data.year}
+                {String(data.year).includes('-') ? (
+    <>
+      <div>{String(data.year).split('-')[0].trim()}</div>
+      <div>-</div>
+      <div>{String(data.year).split('-')[1].trim()}</div>
+    </>
+  ) : (
+    <div>{data.year}</div>
+  )}
             </div>
           </div>
         ))}
