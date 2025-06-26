@@ -19,9 +19,6 @@ export const heroIcons = [
 
 // About Me
 import GithubFillIcon from "remixicon-react/GithubFillIcon";
-import Projector2LineIcon from "remixicon-react/Projector2LineIcon";
-import GroupLineIcon from "remixicon-react/GroupLineIcon";
-import AwardFillIcon from "remixicon-react/AwardFillIcon";
 
 export const aboutData = [
   {
@@ -99,20 +96,24 @@ export const experienceData = [
 // Skills
 export const skillsData = [
   {
-    name: "Figma",
-    icon: "/skills/figma.png",
+    name: "Python",
+    icon: "/skills/python.png",
   },
   {
-    name: "Photoshop",
-    icon: "/skills/photoshop.png",
+    name: "Java",
+    icon: "/skills/java.png",
   },
   {
-    name: "Blender",
-    icon: "/skills/blender.png",
+    name: "C/CPP",
+    icon: "/skills/cpp.png",
   },
   {
-    name: "VS Code",
-    icon: "/skills/vscode.png",
+    name: "Go",
+    icon: "/skills/go.png",
+  },
+  {
+    name: "Rust",
+    icon: "/skills/rust.png",
   },
   {
     name: "HTML",
@@ -126,49 +127,70 @@ export const skillsData = [
     name: "JavaScript",
     icon: "/skills/js.png",
   },
+
   {
-    name: "TailwindCSS",
-    icon: "/skills/tailwind.png",
-  },
-  {
-    name: "Vite",
-    icon: "/skills/vite.png",
+    name: "NodeJS",
+    icon: "/skills/nodejs.png",
   },
   {
     name: "ReactJS",
     icon: "/skills/react.png",
   },
   {
-    name: "TypeScript",
-    icon: "/skills/ts.png",
-  },
-  {
-    name: "AI",
-    icon: "/skills/ai.png",
-  },
-  {
-    name: "Framer Motion",
-    icon: "/skills/framer.png",
-  },
-  {
-    name: "ThreeJS",
-    icon: "/skills/threejs.png",
-  },
-  {
-    name: "NextJS",
-    icon: "/skills/nextjs.png",
-  },
-  {
-    name: "NodeJS",
-    icon: "/skills/nodejs.png",
+    name: "Postgresql",
+    icon: "/skills/postgresql.png",
   },
   {
     name: "MongoDB",
     icon: "/skills/mongodb.png",
   },
   {
+    name: "Redis",
+    icon: "/skills/redis.png",
+  },
+  {
+    name: "Express",
+    icon: "/skills/express.png",
+  },
+  {
+    name: "Spring Boot",
+    icon: "/skills/springboot.png",
+  },
+  {
+    name: "Docker",
+    icon: "/skills/docker.png",
+  },
+  {
+    name: "Kubernetes",
+    icon: "/skills/kubernetes.png",
+  },
+  {
+    name: "aws",
+    icon: "/skills/aws.png",
+  },
+  {
+    name: "Kafka",
+    icon: "/skills/kafka.png",
+  },
+  {
+    name: "Rabbitmq",
+    icon: "/skills/rabbitmq.png",
+  },
+  {
     name: "Github",
     icon: "/skills/github.png",
+  },
+  {
+    name: "TailwindCSS",
+    icon: "/skills/tailwind.png",
+  },
+  {
+    name: "Framer Motion",
+    icon: "/skills/framer.png",
+  },
+  {
+    name: "NextJS",
+    icon: "/skills/nextjs.png",
   },
 ];
 
