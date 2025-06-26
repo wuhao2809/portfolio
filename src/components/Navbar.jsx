@@ -1,5 +1,5 @@
-'use client'
-import { navbarData, copyRightIcon } from '@/assets'
+"use client";
+import { navbarData, copyRightIcon } from "@/assets";
 
 const Navbar = ({ id }) => {
   return (
@@ -12,20 +12,23 @@ const Navbar = ({ id }) => {
       </a>
       <div className="flex flex-col gap-y-3 xl:gap-y-1 sm:gap-y-2 xs:gap-y-0">
         {navbarData.map((item, i) => (
-          <a href={`/#${item.id}`} key={i} className="group flex flex-col items-center gap-y-2">
+          <a
+            href={`/#${item.id}`}
+            key={i}
+            className="group flex flex-col items-center gap-y-2"
+          >
             <span
               className={`text-2xl group-hover:scale-125 xl:group-hover:scale-115 xs:group-hover:scale-100 transition-all ${
                 item.id === id
-                  ? 'text-red-500 scale-110 xl:scale-100 xs:scale-80'
-                  : 'text-yellow-600 scale-100 xl:scale-90 xs:scale-70'
+                  ? "text-red-500 scale-110 xl:scale-100 xs:scale-80"
+                  : "text-yellow-600 scale-100 xl:scale-90 xs:scale-70"
               }`}
             >
               {item.icon}
             </span>
             <span
-              className={`text-[10px] tracking-wide opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 text-center dark:text-white ${
-                i % 2 === 0 ? 'translate-x-2' : '-translate-x-2'
-              } ${item.id === id && '-translate-x-0 opacity-100'}`}
+              className={`text-[10px] tracking-wide text-center dark:text-white transition-all duration-300
+    ${item.id === id ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
             >
               {item.name}
             </span>
@@ -38,7 +41,7 @@ const Navbar = ({ id }) => {
         </span>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -33,7 +33,7 @@ const Projects = () => {
               setTech(text)
               setIndex(i)
             }}
-            className="border border-yellow-500 rounded-xl px-2 py-1 text-sm font-light tracking-wider text-gray-400"
+            className="border border-red-500 rounded-xl px-2 py-1 text-sm tracking-wider text-red-400"
           >
             {text}
           </motion.button>
